@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './test1.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -71,7 +73,13 @@ class WebbyHome extends StatelessWidget {
                 shape: StadiumBorder(),
                 splashColor: Colors.orange,
                 color:  Theme.of(context).primaryColor,
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push( context,
+                    MaterialPageRoute(builder: (context) {
+                        return Test1Demo();
+                    })
+                  );
+                },
                 child: Text('Login In', style: TextStyle(color: Colors.white)),
               )
             ],
