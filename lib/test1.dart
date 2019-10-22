@@ -21,7 +21,7 @@ class Test1Demo extends StatelessWidget {
           color: Colors.blue,
           fontSize: 18,
           fontWeight: FontWeight.w700,
-          decoration: TextDecoration.none,
+          decoration: TextDecoration.overline,
           // decorationColor: Colors.blue,
           // decorationStyle: TextDecorationStyle.wavy
         )
